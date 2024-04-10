@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+    SizeChanged="Window_SizeChanged">
+    <Canvas>
+        <Image x:Name="Sty" Source="/bgbird.jpg" SizeChanged="Window_SizeChanged" ></Image>
+        <Label Name="lblMessage" FontSize="30" Width="800" Height="50" HorizontalContentAlignment="Center">Reflex próba </Label>
+        <Image Canvas.Left="0" Canvas.Top="0" Name="Madar" Source="/Bird.png"  Width="100" MouseDown="Image_MouseDown"  > </Image>
+
+    </Canvas>
+</Window>
